@@ -12,3 +12,24 @@
     Then add the correct role to each section like I did so it looks like 
     the picture in the repo
 -->
+
+<!-- Now *these* are Tabs! -->
+<!-- We've added role attributes to describe the tab list and each tab. -->
+<div class="list-group" role="tablist">
+    <li id="ch1Tab" class="list-group-item active" role="tab">
+      <a href="#ch1Panel">Chapter 1</a>
+    </li>
+    <li id="ch2Tab" class="list-group-item" role="tab">
+      <a href="#ch2Panel">Chapter 2</a>
+    </li>
+    <li id="quizTab" class="list-group-item" role="tab">
+      <a href="#quizPanel">Quiz</a>
+    </li>
+  </div>
+  
+  <div class="list-group">
+    <!-- Notice the role and aria-labelledby attributes we've added to describe these panels. -->
+    <div id="ch1Panel" class="list-group-item" role="tabpanel" aria-labelledby="ch1Tab">Chapter 1 content goes here</div>
+    <div id="ch2Panel" class="list-group-item" role="tabpanel" aria-labelledby="ch2Tab">Chapter 2 content goes here</div>
+    <div id="quizPanel" class="list-group-item" role="tabpanel" aria-labelledby="quizTab">Quiz content goes here</div>
+  </div>
